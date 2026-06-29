@@ -50,7 +50,7 @@ async def upload_pdf(file: UploadFile = File(...)):
             _executor, _store_sync, current_pdf_text, doc_id, file.filename
         )
 
-        # ✅ History mein naya entry add (yeh part missing tha)
+        
         add_to_history({
             "name": file.filename,
             "doc_id": doc_id,
