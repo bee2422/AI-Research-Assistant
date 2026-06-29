@@ -1,0 +1,18 @@
+[
+    {
+        "name": "report podsum updatedd .pdf",
+        "doc_id": "a2bd7845-487d-487b-8699-11f56ee4dd7f",
+        "date": "25 Jun 2026, 08:28 PM",
+        "favorite": false,
+        "chat_history": [
+            {
+                "question": "what is reportlab and how does it work?",
+                "answer": "From Document:\n\nReportLab is used to generate professional, readable documents from the summary. It supports:\n\n1. Title formatting\n2. Page styling\n3. Headers\n4. Footers\n5. Image insertion (if needed)\n\nIt ensures the output is sharable, printable, and looks professional. ReportLab initially struggled with large or multilingual summaries, requiring custom code for elements like table of contents, headers, alignment, and spacing."
+            },
+            {
+                "question": "what is bart?",
+                "answer": "From Document:\nBART (Bidirectional and Auto-Regressive Transformer) by Facebook is a sequence-to-sequence model trained for text generation tasks like summarization, translation, and more. It is a transformer model that converts 500+ word transcripts into summaries around 100\u2013200 words. It uses sequence-to-sequence learning with attention to retain key ideas while removing redundancy."
+            }
+        ]
+    }
+]
