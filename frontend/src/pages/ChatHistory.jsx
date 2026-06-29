@@ -24,7 +24,7 @@ function ChatHistory() {
     axios
       .delete(`http://127.0.0.1:8000/history/${id}/chat/${chatIndex}`)
       .then(() => {
-        fetchHistory(); // ✅ delete ke baad refresh
+        fetchHistory();
       })
       .catch((err) => console.log(err));
   };
