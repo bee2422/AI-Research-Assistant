@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import doodle1 from "../assets/doodle1.png";
 
-// **text** ke stars (**) hata deta hai, bold formatting nahi karta — plain text rehta hai
+
 function stripStars(text) {
   return text.replace(/\*\*/g, "");
 }
@@ -21,14 +21,12 @@ function PDFUploader() {
     if (savedName) setFileName(savedName);
     if (savedSummary) setSummary(savedSummary);
 
-    // ✅ Refresh hone par "Loading..." stuck nahi rahega.
-    // Sirf woh PDF "uploaded" maana jayega jiska upload
-    // pehle se successfully complete ho chuka tha.
+   
     setUploaded(savedUploaded === "true");
     setLoading(false);
   }, []);
 
-  // ✅ File select hote hi seedha upload start (no separate button)
+  
   const handleFileChange = async (event) => {
     const file = event.target.files[0];
     if (!file) return;
