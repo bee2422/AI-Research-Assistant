@@ -8,7 +8,7 @@ router = APIRouter()
 @router.post("/generate-summary")
 async def generate_pdf_summary():
 
-    # Check if a PDF has been uploaded
+   
     if not upload.current_pdf_text:
         return {
             "summary": "No PDF uploaded."
