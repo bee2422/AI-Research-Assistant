@@ -1,10 +1,10 @@
 import chromadb
 from chromadb.utils import embedding_functions
 
-# Persistent DB
+
 client = chromadb.PersistentClient(path="./chroma_db")
 
-# Load model once
+
 embedding_function = embedding_functions.SentenceTransformerEmbeddingFunction(
     model_name="all-MiniLM-L6-v2"
 )
@@ -29,7 +29,7 @@ def clear_collection():
     try:
         client.delete_collection("research_papers")
     except Exception:
-        pass  # collection already absent — ignore
+        pass 
     collection = client.get_or_create_collection(
         name="research_papers",
         embedding_function=embedding_function
@@ -37,7 +37,7 @@ def clear_collection():
 
 
 def store_text(text, doc_id, filename):
-    # ✅ Naya PDF aaya -> purana data clear karo pehle
+   
     clear_collection()
 
     chunk_size = 1000
