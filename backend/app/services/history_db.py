@@ -1,7 +1,7 @@
 import json
 import os
 
-# ✅ Fixed absolute path
+
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 FILE_NAME = os.path.join(BASE_DIR, "history.json")
 
