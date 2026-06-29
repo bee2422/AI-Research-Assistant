@@ -37,7 +37,7 @@ Concise Answer:
 """
 
     response = client.chat.completions.create(
-        model="google/gemma-3n-e4b-it",  # ✅ fix
+        model="google/gemma-3n-e4b-it",  
         messages=[{"role": "user", "content": prompt}]
     )
 
