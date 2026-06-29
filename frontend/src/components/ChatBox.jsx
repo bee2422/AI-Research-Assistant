@@ -34,7 +34,7 @@ function ChatBox() {
     }
   };
 
-  // 🔥 Enter key se question ask hoga
+  
   const handleKeyDown = (e) => {
     if (e.key === "Enter" && !e.shiftKey) {
       e.preventDefault();
